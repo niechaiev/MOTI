@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BF32271-95AC-48FE-9357-14185DFB98DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MOTI</RootNamespace>
+    <AssemblyName>MOTI</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddOneCriteriaMarkForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOneCriteriaMarkForm.Designer.cs">
+      <DependentUpon>AddOneCriteriaMarkForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlternativeCreationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativeCreationForm.Designer.cs">
+      <DependentUpon>AlternativeCreationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlternativeCriteriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativeCriteriesForm.Designer.cs">
+      <DependentUpon>AlternativeCriteriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlternativesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlternativesForm.Designer.cs">
+      <DependentUpon>AlternativesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComparationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComparationForm.Designer.cs">
+      <DependentUpon>ComparationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CriteriaComboboxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriteriaComboboxForm.Designer.cs">
+      <DependentUpon>CriteriaComboboxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CriteriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriteriesForm.Designer.cs">
+      <DependentUpon>CriteriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.cs">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="kondorceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kondorceForm.Designer.cs">
+      <DependentUpon>kondorceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LPRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LPRForm.Designer.cs">
+      <DependentUpon>LPRForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marksForm.Designer.cs">
+      <DependentUpon>marksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterLPRform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterLPRform.Designer.cs">
+      <DependentUpon>RegisterLPRform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relation.Designer.cs">
+      <DependentUpon>Relation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResultsForm.Designer.cs">
+      <DependentUpon>ResultsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RollForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RollForm.Designer.cs">
+      <DependentUpon>RollForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RowSum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RowSum.Designer.cs">
+      <DependentUpon>RowSum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUCCess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUCCess.Designer.cs">
+      <DependentUpon>SUCCess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeightsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeightsForm.Designer.cs">
+      <DependentUpon>WeightsForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddOneCriteriaMarkForm.resx">
+      <DependentUpon>AddOneCriteriaMarkForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlternativeCreationForm.resx">
+      <DependentUpon>AlternativeCreationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlternativeCriteriesForm.resx">
+      <DependentUpon>AlternativeCriteriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlternativesForm.resx">
+      <DependentUpon>AlternativesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComparationForm.resx">
+      <DependentUpon>ComparationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriteriaComboboxForm.resx">
+      <DependentUpon>CriteriaComboboxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriteriesForm.resx">
+      <DependentUpon>CriteriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kondorceForm.resx">
+      <DependentUpon>kondorceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LPRForm.resx">
+      <DependentUpon>LPRForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marksForm.resx">
+      <DependentUpon>marksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterLPRform.resx">
+      <DependentUpon>RegisterLPRform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relation.resx">
+      <DependentUpon>Relation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResultsForm.resx">
+      <DependentUpon>ResultsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RollForm.resx">
+      <DependentUpon>RollForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RowSum.resx">
+      <DependentUpon>RowSum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUCCess.resx">
+      <DependentUpon>SUCCess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeightsForm.resx">
+      <DependentUpon>WeightsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
